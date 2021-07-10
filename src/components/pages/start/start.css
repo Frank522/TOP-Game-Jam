@@ -1,0 +1,8 @@
+.leftDino {
+    width: 200px;
+    transform:scaleX(-1);
+}
+
+.rightDino{
+    width: 300px;
+}
