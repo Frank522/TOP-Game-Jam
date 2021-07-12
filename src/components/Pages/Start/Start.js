@@ -1,3 +1,6 @@
+import BasicGoodDino from "../../Dinos/BasicGoodDino.js";
+import BasicBadDino from "../../Dinos/BasicBadDino.js";
+
 const body = document.querySelector('.body');
 const navBar = document.querySelector('.navBar');
 const mainContent = document.querySelector('.mainContent');
@@ -13,14 +16,19 @@ selectLink.setAttribute('type', 'text/css');
 selectLink.setAttribute('href', './src/components/Pages/Start/Start.css');
 
 const startScreen = () => {
+  DinoRight = BasicBadDino('100px');
+  DinoLeft = BasicGoodDino('100px');
+  DinoLeft.draw(mainContent);
   mainContent.appendChild(document.createElement('div')).id = 'title';
   document.querySelector('#title').classList = 'title blue fontBig';
-  document.querySelector('#title').textContent = 'This is my title';
+  document.querySelector('#title').textContent = 'Dino Wars';
+
 };
 const test = () => {
   console.log('test');
 };
 
-selector.addEventListener('click', test);
+
+selector.addEventListener('click', startScreen, {once: true});
 
 export default startScreen;

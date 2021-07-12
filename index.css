@@ -15,7 +15,7 @@
 .mainContent {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: yellow;
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -26,4 +26,5 @@
   align-items: center;
   background-color: green;
   height: 3rem;
+  transform: scaleX(-1);
 }
