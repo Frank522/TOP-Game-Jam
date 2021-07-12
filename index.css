@@ -1,0 +1,29 @@
+/* set Default settings here */
+
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  height: 3rem;
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.footerBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  height: 3rem;
+}
